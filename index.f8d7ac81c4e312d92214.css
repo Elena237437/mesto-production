@@ -887,18 +887,13 @@ template {
 }
 
 .popup__content_content_image {
-  max-width: 75vw;
-  max-height: 75vh;
-  height: auto;
-  width: auto;
-  display: flex;
   background: transparent;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   padding: 0;
+  width: auto;
+  height: auto;
+  max-width: none;
+  min-height: 0;
 }
 
 
@@ -1037,9 +1032,9 @@ template {
 }
 
 .popup__image {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: contain;
   display: block;
 }
 
